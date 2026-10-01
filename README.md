@@ -1,386 +1,86 @@
-/* =========================
-   GENERAL STYLING
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #fff8f5;
-    color: #333;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-    background-color: #8b4a5a;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header h1 {
-    margin-bottom: 15px;
-    font-size: 32px;
-}
-
-/* =========================
-   NAVIGATION
-========================= */
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #663442;
-}
-
-/* =========================
-   GENERAL SECTIONS
-========================= */
-
-section {
-    padding: 70px 8%;
-    text-align: center;
-}
-
-section h2 {
-    font-size: 32px;
-    color: #8b4a5a;
-    margin-bottom: 20px;
-}
-
-section p {
-    max-width: 800px;
-    margin: 10px auto;
-}
-
-/* =========================
-   HOME
-========================= */
-
-#home {
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.45),
-        rgba(0, 0, 0, 0.45)
-    ),
-    url("../IMAGES/pexels-brent-keane-181485-1702373.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    color: white;
-}
-
-#home h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-#home p {
-    font-size: 18px;
-    margin-bottom: 25px;
-}
-
-#home a {
-    background-color: #8b4a5a;
-    color: white;
-    text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-#home a:hover {
-    background-color: #663442;
-}
-
-/* =========================
-   ABOUT
-========================= */
-
-#about {
-    color: white;
-
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ),
-    url("../IMAGES/OIP (5).webp");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-#about h2 {
-    color: white;
-}
-
-/* =========================
-   CAKES
-========================= */
-
-#cakes {
-    background-color: #fff8f5;
-}
-
-#cakes article {
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    min-width: 250px;
-    margin: 15px;
-    padding: 20px;
-
-    background-color: white;
-    border-radius: 10px;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
-    transition: transform 0.3s ease;
-}
-
-#cakes article:hover {
-    transform: translateY(-8px);
-}
-
-#cakes article img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-#cakes article h3 {
-    color: #8b4a5a;
-    margin: 15px 0 10px;
-}
-
-#cakes article strong {
-    color: #8b4a5a;
-    font-size: 18px;
-}
-
-/* =========================
-   SPECIAL OFFERS
-========================= */
-
-#offers {
-    color: white;
-
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ),
-    url("../IMAGES/OIP (3).webp");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-#offers h2 {
-    color: white;
-}
-
-.offers-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.offer-card {
-    background-color: white;
-    color: #333;
-    width: 300px;
-    padding: 30px 20px;
-    border-radius: 10px;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.offer-icon {
-    font-size: 45px;
-    margin-bottom: 15px;
-}
-
-.offer-card h3 {
-    color: #8b4a5a;
-    margin-bottom: 15px;
-}
-
-.offer-price {
-    color: #8b4a5a;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* =========================
-   ORDER FORM
-========================= */
-
-#order {
-    background-color: #f8e8eb;
-}
-
-form {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 30px;
-
-    background-color: white;
-    border-radius: 10px;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
-    text-align: left;
-}
-
-form label {
-    font-weight: bold;
-    color: #8b4a5a;
-}
-
-form input,
-form select,
-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-
-    border: 1px solid #ccc;
-    border-radius: 5px;
-
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-}
-
-form textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-form button {
-    width: 100%;
-    padding: 13px;
-
-    background-color: #8b4a5a;
-    color: white;
-
-    border: none;
-    border-radius: 5px;
-
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #663442;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-#contact {
-    background-color: #fff8f5;
-}
-
-#contact h3 {
-    color: #8b4a5a;
-    margin-top: 25px;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background-color: #8b4a5a;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-footer p {
-    margin: 5px;
-}
-
-/* =========================
-   MOBILE RESPONSIVENESS
-========================= */
-
-@media (max-width: 768px) {
-
-    header h1 {
-        font-size: 26px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #home h1 {
-        font-size: 32px;
-    }
-
-    section {
-        padding: 50px 5%;
-    }
-
-    #cakes article {
-        width: 90%;
-        margin: 15px auto;
-    }
-
-    .offer-card {
-        width: 90%;
-    }
-
-    form {
-        width: 95%;
-    }
-}
+# Best Cakes Website - Student Project
+
+## Project Overview
+Best Cakes is a non-profit organisation website that provides delicious and affordable cakes to customers and members of the community. This website was developed as part of a Web Development student project.
+
+The goal of the website is to make celebrations special while using cake sales to support community objectives.
+
+## Website Structure
+
+### 1. File Structure
+### 2. Pages / Sections Added
+The website is a one-page site with anchor navigation:
+
+- **Home (#home)** - Welcome message and call-to-action button "View Our Cakes"
+- **About (#about)** - Information about Best Cakes as a non-profit organisation
+- **Cakes (#cakes)** - 6 popular cakes with images, descriptions and prices:
+    1. Chocolate Cake - R250
+    2. Vanilla Cake - R220
+    3. Strawberry Cake - R280
+    4. Birthday Cake - R300
+    5. Red Velvet Cake - R320
+    6. Wedding Cake - From R850
+- **Special Offers (#offers)** - 3 offer cards added:
+    - Birthday Special - FREE message
+    - Buy 2 Cakes - FREE Cupcakes
+    - Community Special - SAVE 10%
+- **Order (#order)** - Enquiry form for customers
+- **Contact (#contact)** - Phone, Email and Locations (Johannesburg, Pretoria)
+- **Footer** - Copyright and project info
+
+### 3. CSS Features Implemented (Section 2 & 3)
+
+**2.1 External Stylesheet:**
+- External CSS file linked: `<link rel="stylesheet" href="CSS/style.css">`
+- File named `style.css` inside `CSS/` folder
+
+**2.2 Base Style & Reset:**
+- CSS Reset: `* { margin:0; padding:0; box-sizing:border-box; }`
+- Base font: Segoe UI, 16px, line-height 1.7
+- Colour scheme: Pink (#ff4e8a), white, dark grey
+- Background: #fffafc
+
+**2.3 Typography:**
+- Headings: Georgia serif, bold
+- Body: Segoe UI sans-serif
+- Font-size, font-weight, line-height, letter-spacing all set
+- Harmonious scale: H1 2.5rem, H2 2.2rem, H3 1.3rem
+
+**2.4 Layout Structure:**
+- Flexbox: `display: flex`, `flex-direction`, `justify-content`, `align-items` used in header and nav
+- Grid: `display: grid`, `grid-template-columns`, `grid-template-areas` used for cakes and offers
+- Desktop: 3-column grid
+
+**2.5 Visual Styles:**
+- Colors, background-colors, borders, box-shadows used
+- Pseudo-classes: `:hover` on nav and cards, `:focus` on inputs, `:active` on button
+
+**3.1 Breakpoints & Media Queries:**
+- Desktop: Default (3 columns)
+- Tablet: `@media (max-width: 1024px)` - 2 columns, navigation stacks
+- Mobile: `@media (max-width: 768px)` - Single-column layout, vertical navigation
+- Small Mobile: `@media (max-width: 480px)` - Smaller fonts
+
+**3.2 Relative Units:**
+- `em` used for padding and gap
+- `rem` used for font-size, border-radius, height
+- `%` used for width (90%, 100%)
+
+**3.3 Responsive Images:**
+- CSS: `img { max-width:100%; height:auto; object-fit:cover; }`
+- HTML: `srcset` and `sizes` attributes used
+- `picture` element used for different screen sizes
+
+### 4. JavaScript Functionality Added
+
+I added JavaScript for **calculation and form validation** in the enquiry form.
+
+**Location:** At the bottom of `index.html` inside `<script>...</script>` before `</body>`
+
+**What the JavaScript does:**
+
+1. **Prevents Past Dates:**
+    ```javascript
+    dateInput.min = new Date().toISOString().split("T")[0];
+
+    Prevents Page Reload:javascript    event.preventDefault();
